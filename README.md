@@ -1,7 +1,4 @@
 # 3D Shapes Playground 🌐✨
-
-<video src="./preview/3d playground.mp4" controls autoplay loop muted width="800"></video>
-
 An immersive 3D environment built with Three.js that allows users to create, manipulate, and animate geometric shapes in real-time. Perfect for learning WebGL concepts or as a starter template for 3D web applications.
 
 ---
