@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shapes Playground</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div id="info">
+        <h1><i class="fas fa-cube"></i> 3D Shapes Playground</h1>
+        <p>Interact with the scene and add different 3D shapes!</p>
+        <p><i class="fas fa-mouse-pointer"></i> Left drag=Rotate | Right drag=Pan | Scroll=Zoom</p>
+        <div id="stats">
+            <span id="shapeCount">0 shapes</span>
+            <span id="fpsCounter">0 FPS</span>
+        </div>
+    </div>
+    
+    <div id="controls">
+        <button id="addBoxBtn"><i class="fas fa-cube"></i> Box</button>
+        <button id="addSphereBtn"><i class="fas fa-globe"></i> Sphere</button>
+        <button id="addPyramidBtn"><i class="fas fa-gem"></i> Pyramid</button>
+        <button id="addCylinderBtn"><i class="fas fa-database"></i> Cylinder</button>
+        <button id="addTorusBtn"><i class="fas fa-ring"></i> Torus</button>
+        <button id="clearBtn"><i class="fas fa-trash"></i> Clear</button>
+        <button id="animateBtn"><i class="fas fa-pause"></i> Pause</button>
+        <button id="randomizeBtn"><i class="fas fa-palette"></i> Randomize</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    
+    <script src="helpers.js"></script>
+    
+    <script src="shapes/Box.js"></script>
+    <script src="shapes/Sphere.js"></script>
+    <script src="shapes/Pyramid.js"></script>
+    <script src="shapes/Cylinder.js"></script>
+    <script src="shapes/Torus.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
